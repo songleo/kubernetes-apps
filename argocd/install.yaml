@@ -21709,6 +21709,8 @@ spec:
       containers:
       - args:
         - /usr/local/bin/argocd-server
+        - --rootpath=/argocd
+        - --basehref=/argocd
         env:
         - name: ARGOCD_SERVER_INSECURE
           valueFrom:
