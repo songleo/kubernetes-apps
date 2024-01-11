@@ -96,3 +96,6 @@ resources:
   - manifests/prometheusOperator-service.yaml
   - manifests/prometheusOperator-serviceAccount.yaml
   - manifests/prometheusOperator-serviceMonitor.yaml
+  - manifests/alertmanager-ingress.yaml
+  - manifests/grafana-ingress.yaml
+  - manifests/prometheus-ingress.yaml
