@@ -1,4 +1,7 @@
 ```
+git clone git@github.com:prometheus-operator/kube-prometheus.git
+cd kube-prometheus
+git checkout release-0.13
 kubectl apply --server-side -f manifests/setup
 kubectl wait \
 	--for condition=Established \
@@ -8,7 +11,7 @@ kubectl apply -f manifests/
 
 k port-forward svc/prometheus-k8s 9090:9090
 
-http://localhost:9090/alerts
+http://localhost:9090/targets?search=
 ```
 
 ### ref
