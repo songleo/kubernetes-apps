@@ -9,7 +9,7 @@ kubectl wait \
 	--namespace=monitoring
 kubectl apply -f manifests/
 
-k port-forward svc/prometheus-k8s 9090:9090
+k port-forward -n monitoring svc/prometheus-k8s 9090:9090
 
 http://localhost:9090/targets?search=
 ```
